@@ -38,6 +38,22 @@ int main(void) {
     }
   }
 }
+  float circle_point = 0.0;
+  float square_point = 0.0;
+  for(int i=0; i<n; ++i)
+  { 
+    float x = frandom();
+    float y = frandom();
+    float d = sqrt(x*x + y*y); 
+    if (d<=1) {
+     circle_point++;
+    }
+    square_point++;
+  }  
+  float pi = (4*circle_point/square_point);
+  return pi;
+} 
+
 
 
 
