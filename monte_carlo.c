@@ -38,6 +38,8 @@ int main(void) {
     }
   }
 }
+float mc_pi(int n)
+{ 
   float circle_point = 0.0;
   float square_point = 0.0;
   for(int i=0; i<n; ++i)
@@ -50,9 +52,9 @@ int main(void) {
     }
     square_point++;
   }  
-  float pi = (4*circle_point/square_point);
+  float pi = 4.0*(circle_point/square_point);
   return pi;
-} 
+}
 
 
 
