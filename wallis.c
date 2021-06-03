@@ -23,4 +23,12 @@ int main(void) {
     }
   }
 }
+float wallis_pi(int n)
+{
+ float pii=1.0;
+ for(int i=1;i<n;i++)
+    {
+      float buffer=4.0*i*i;
+      pii*=buffer/(buffer-1);
+    }
 
