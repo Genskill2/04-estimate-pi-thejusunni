@@ -31,4 +31,6 @@ float wallis_pi(int n)
       float buffer=4.0*i*i;
       pii*=buffer/(buffer-1);
     }
+      return 2*pii;
+ }
 
